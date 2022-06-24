@@ -1,18 +1,16 @@
 import random 
-
-property=('Victory')
-destoryAllChildren= ('Defeat.. haha you loser.. try again lol' )
-
 chances=0
-number=random.randint(1,999)
+number=random.randint(1,5)
 
-while chances < 5 :
-   print("Guess a number between 1-999")
-   inputGive=input("Type the number here: ")
-   if inputGive == number :
-        print(property)
+while chances < 5:
+   print("Guess a number between 1-5")
+   inputGive=int(input("Type the number here: "))
+   if inputGive ==number:
+      print("You guessed correctly")
+      break
    chances=chances+1
-if  chances ==5:
-        print(destoryAllChildren)
+if  chances >5:
+        print("You lost")
+     
     
 
